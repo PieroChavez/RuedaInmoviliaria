@@ -1,0 +1,84 @@
+/* src/components/HeroCarousel.css */
+
+  .hero-carousel {
+    /*position: relative;*/
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-image {
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 2.8s ease-in-out;
+  }
+  
+  .carousel-caption {
+    position: relative;
+    text-align: center;
+    color: var(--secondary-color);
+    z-index: 1;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #333333;
+  }
+  
+  /* Estilos Responsivos */
+  @media (max-width: 768px) {
+    .carousel-caption h1 {
+      font-size: 2rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carousel-caption h1 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  
+    .cta-button {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+    }
+  }
+  

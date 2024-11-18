@@ -1,0 +1,30 @@
+
+  
+  .carousel-slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .carousel-text {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .carousel-text h2 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .carousel-text strong {
+    font-size: 1.5rem;
+  }
+  

@@ -1,0 +1,83 @@
+/* Estilos para el contenedor de la barra de búsqueda */
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  margin: 0 auto;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.452);
+  transition: all 0.3s ease;
+  
+}
+
+/* Input de búsqueda */
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333;
+  transition: width 0.3s ease;
+}
+
+/* Input al hacer focus */
+.search-input:focus {
+  width: 100%;
+}
+
+/* Botón de búsqueda */
+.search-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid gold;
+ 
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.search-button:hover {
+  background-color: #ff9800;
+  transform: scale(1.1);
+}
+
+/* Icono de búsqueda */
+.search-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .search-bar-container {
+    max-width: 200px;
+    
+    
+    border: 1px solid gold;
+    border-radius: 50px;
+    
+    
+    
+    
+  }
+
+  .search-input {
+    display: none; /* Oculta el input en pantallas pequeñas */
+  }
+
+  .search-button {
+    width: 36px;
+    height: 36px;
+  }
+}

@@ -1,0 +1,83 @@
+.property-card {
+  display: flex;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-image img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.property-info {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.property-header h3 {
+  font-size: 1.5em;
+  color: #ff5722;
+}
+
+.property-header p {
+  color: #757575;
+  margin-top: 5px;
+}
+
+h4 {
+  color: #333;
+  margin: 10px 0;
+}
+
+.property-details {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.property-description {
+  margin-top: 10px;
+  color: #777;
+}
+
+.property-logo img {
+  width: 120px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.property-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.call {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+.btn.whatsapp {
+  background-color: #25d366;
+  color: #fff;
+}
+
+.btn.contact {
+  background-color: #ff9800;
+  color: #fff;
+}
