@@ -42,7 +42,7 @@ const StepsCards = () => {
                         <img src={assets.twitter_icon} alt="Adondevivir" />
                     </div>
                     <div className="text-section">
-                        <h3>¡Somos Adondevivir!</h3>
+                        <h3>¡Somos Rueda Company!</h3>
                         <p>14 años en el mercado y 1.3 millones de avisos publicados nos respaldan en la búsqueda de tu hogar.</p>
                     </div>
                 </div>

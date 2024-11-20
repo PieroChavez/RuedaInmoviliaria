@@ -21,11 +21,11 @@ const Footer = () => {
             </div>
         </div>
         <div className="footer-content-center">
-            <h2>Rueda</h2>
+            <h2>RUEDA</h2>
             <ul>
                 <li>Home</li>
                 <li>Abaut us</li>
-                <li>Delivery</li>
+                
                 <li>Privacy Policy</li>
             </ul>
         </div>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <p className="footer-copyright">Copyright 2024 © Pacari Inmovilaria SAC</p>
+        <p className="footer-copyright">Copyright 2025 © Rueda Company SAC</p>
     </div>
   )
 }

@@ -1,49 +1,26 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
-import './Home.css'
-import Header from '../../components/Header/Header'
-//  import ExplorerMenu from '../../components/ExplorerMenu/ExplorerMenu'
-//  import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
-//  import Carousel from '../../components/carrucel/Carousel'
-import Properties from '../../components/Hero/Properties'
-import InfoCards from '../../components/InfoCars/InfoCars'
-import StepsCards from '../../components/InfoCars/StepsCards/StepsCards'
-import PropertyCard from '../../components/InfoCars/PropertyCards/PropertyCards'
-import AppDownload from '../../components/AppDownloand/AppDownload'
-import OurHistory from '../Cart/Our/OurHistory'
-import Reviews from '../../components/InfoCars/Reviews/Review'
-import OurCourses from '../../components/InfoCars/Reviews/OurCourser/OurCourser'
-import VideoTutorials from '../../components/InfoCars/Videos/VideoTutoriales'
-import VideoPortada from '../../components/InfoCars/Videos/VideoPortada/VideoPortada'
-
-
+import React, { useEffect } from "react";
+import "./Home.css";
+import Properties from "../../components/Hero/Properties";
+import StepsCards from "../../components/InfoCars/StepsCards/StepsCards";
+import PropertyCard from "../../components/InfoCars/PropertyCards/PropertyCards";
+// Importar Cart si es necesario más adelante
+// import Cart from "../Cart/Cart";
 
 const Home = () => {
-    const[category,setCategory]= useState('All')
+
+
   return (
-    <div className='home'>
+    <div className="home">
 
-      
-      
-      
-      
-       
-      
-      <Properties/>
-      <OurHistory/>
-     <StepsCards/>
+      <Properties />
+      <PropertyCard />
+      <StepsCards />
 
-      
-      
-      <Reviews/>
-     
-      
-      <AppDownload/>
-     
-
-      
+      {/* Si se necesita el componente Cart, descomenta esta línea */}
+      {/* <Cart /> */}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -17,13 +17,14 @@ const Navbar = ({setShowLogin}) => {
 <div className='navbar'>
 
   <ul className="navbar-menu">
-    <Link to='/' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Inicio</Link>
-    <a href='#footer' onClick={() => setMenu("contac-us")} className={menu === "contac-us" ? "active" : ""}>Contacto</a>
+  <a href='#home' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Inicio</a>
+  <a href='/contact' className={menu === "contac-us" ? "active" : ""}>Contacto</a>
+
 
   </ul>
 
 
-  <Link to='/'><h1><img src={assets.logo} alt="" className="logo" /></h1></Link>
+  <Link to='/'   href='#home' onClick={() => setMenu("home")}  > <h1><img src={assets.logo} alt="" className="logo" /></h1></Link>
 
   
   
