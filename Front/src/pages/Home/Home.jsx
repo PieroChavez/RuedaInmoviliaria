@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home">
 
       <Properties />
-      <PropertyCard />
+      
       <StepsCards />
 
       {/* Si se necesita el componente Cart, descomenta esta línea */}
