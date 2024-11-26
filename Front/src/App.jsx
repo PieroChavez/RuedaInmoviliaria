@@ -26,7 +26,7 @@ const App = () => {
 
  
     
-              <HeroCarousel/>
+              
      
       <div className="app">   
         
