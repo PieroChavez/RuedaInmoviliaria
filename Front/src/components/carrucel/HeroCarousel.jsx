@@ -11,6 +11,25 @@ import parrot2 from '../../assets/port/parrot2.jpg';
 import heron from '../../assets/port/heron.jpeg';
 import butterfly2 from '../../assets/port/butterfly2.jpg';
 
+import pipi from '../../assets/marañon/DSC00908.png';
+import jaenuno from '../../assets/marañon/jaenuno.jpg';
+
+
+
+
+ //import diesciseis from '../../assets/rueda/diesciseis.jpg';
+ //import nueve from '../../assets/rueda/nueve.jpg';
+ //import DJI_0437 from '../../assets/marañon/DJI_0437.jpg';
+ //import veintiseis from '../../assets/rueda/vieintiseis.jpg';
+ //import DJI_0491_HDR from '../../assets/marañon/DJI_0491-HDR.jpg';
+ //import DSC00928 from '../../assets/marañon/DSC00928.jpg'
+ //import DJI_0551 from '../../assets/marañon/DJI_0551.jpg'
+ //import DSC00314 from '../../assets/marañon/DSC00314.jpg'
+ //import DSC00383 from '../../assets/marañon/DSC00383.jpg'
+ //import DSC00450 from '../../assets/marañon/DSC00450.jpg'
+
+
+
 const HeroCarousel = () => {
   const carouselRef = useRef(null);
   const listRef = useRef(null);
@@ -69,16 +88,17 @@ const HeroCarousel = () => {
   }, []);
 
   const items = [
+    { name: 'JAEN', image: jaenuno },
     { name: 'EAGLE', image: eagle },
-    { name: 'OWL', image: owl1 },
-    { name: 'CROW', image: crow },
-    { name: 'BUTTERFLY', image: butterfly1 },
-    { name: 'OWL', image: owl2 },
-    { name: 'EAGLE', image: eagel3 },
-    { name: 'KINGFISHER', image: kingfisher2 },
-    { name: 'PARROT', image: parrot2 },
-    { name: 'HERON', image: heron },
-    { name: 'BUTTERFLY', image: butterfly2 },
+   { name: 'OWL', image: pipi },
+   // { name: 'CROW', image: crow },
+   // { name: 'BUTTERFLY', image: butterfly1 },
+   // { name: 'OWL', image: owl2 },
+   // { name: 'EAGLE', image: eagel3 },
+   // { name: 'KINGFISHER', image: kingfisher2 },
+   // { name: 'PARROT', image: parrot2 },
+   // { name: 'HERON', image: heron },
+   // { name: 'BUTTERFLY', image: butterfly2 },
   ];
 
   return (
