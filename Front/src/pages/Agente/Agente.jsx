@@ -1,7 +1,24 @@
 import React from 'react';
 import './agente.css';
+import arnulfo from '../../assets/rueda/arnulfo.jpg';
 
 const Agente = () => {
+
+  const items = [
+   
+    { name: 'Tarapoto', image: arnulfo },
+    //{ name: 'Al Equipo ', image: veintiseis },
+    //{ name: 'Marañon', image:  DJI_0491_HDR },
+    //{ name: 'Jaen', image: DJI_0437 },
+
+    // { name: 'BUTTERFLY', image: DSC00928 },
+  
+    // { name: 'EAGLE', image: DJI_0551 },
+    // { name: 'KINGFISHER', image: DSC00450},
+    // { name: 'PARROT', image: DSC00314 },
+    // { name: 'HERON', image: DSC00383 },
+    // { name: 'BUTTERFLY', image: DSC00500 },
+  ];
   return (
     <div className="agente-container">
       <div className="agente-header">
@@ -11,7 +28,7 @@ const Agente = () => {
 
       <div className="agente-profile">
         <div className="agente-image">
-          <img
+          <img 
             src="https://via.placeholder.com/300" // Reemplaza con la URL de la imagen del agente
             alt="Agente Inmobiliario"
           />

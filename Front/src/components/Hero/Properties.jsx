@@ -1,17 +1,17 @@
-// src/components/Properties.jsx
 import React from 'react';
 import './Properties.css';
-import { assets } from '../../assets/assets';
+import nueve from '../../assets/rueda/nueve.jpg'; // Importa correctamente las imágenes
+import diez from '../../assets/marañon/DJI_0579.jpg'; 
+import once from '../../assets/marañon/DSC00618.jpg'; 
 
-// Placeholder de imagen en blanco
 
 const properties = [
-  { id: 1, title: 'Terreno en Laguna Azul', description: '500 m² - Vista a la laguna', price: '$15,000', image: assets },
-  { id: 2, title: 'Lote en Tarapoto', description: '300 m² - Cerca al centro', price: '$10,000', image: assets },
-  { id: 3, title: 'Terreno en Sauce', description: '800 m² - Zona tranquila', price: '$18,000', image: assets },
-//  { id: 4, title: 'Lote en San Martín', description: '400 m² - Excelente ubicación', price: '$12,500', image: placeholderImage },
-//  { id: 5, title: 'Terreno en Rioja', description: '600 m² - Clima agradable', price: '$20,000', image: placeholderImage },
-//  { id: 6, title: 'Lote en Lamas', description: '350 m² - Vistas increíbles', price: '$9,500', image: placeholderImage },
+  { id: 1, image: nueve, title: 'Terreno en Laguna Azul', description: '500 m² - Vista a la laguna', price: 'S/ 15,000' },
+  { id: 2, image: diez, title: 'Viña del Marañon', description: '420 m² - Cerca al centro', price: 'S/ 72,240.00' },
+  { id: 3, image: once, title: 'Terreno en Jaen', description: '420 m² - Zona tranquila', price: 'S/ 68,040.00' },
+
+  		
+
 ];
 
 const Properties = () => {
@@ -21,7 +21,7 @@ const Properties = () => {
       <div className="properties-list">
         {properties.map((property) => (
           <div key={property.id} className="property-card-container">
-            <img src={assets.portada_uno_selva} alt={property.title} className="property-image" />
+            <img src={property.image} alt={property.title} className="property-image" />
             <h3>{property.title}</h3>
             <p>{property.description}</p>
             <p className="property-price">{property.price}</p>

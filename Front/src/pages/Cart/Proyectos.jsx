@@ -39,10 +39,12 @@ const Proyectos = () => {
 
   return (
     <div className="proyectos-container">
-      <header className="proyectos-header">
-        <h1>Proyectos en Jaén, Cajamarca</h1>
-        <p>Descubre los terrenos ideales para tus sueños en la ciudad de Jaén.</p>
-      </header>
+       <div class="proyectos-header">
+    <h1 class="titulo-ajustado">PROYECTO - VIÑA DEL MARAÑON</h1>
+    <p>Descubre los terrenos ideales para tus sueños en la ciudad de Jaén.</p>
+    </div>
+
+     
 
       <section className="proyectos-list">
         {terrenos.map((terreno) => (

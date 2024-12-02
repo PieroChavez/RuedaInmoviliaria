@@ -16,9 +16,9 @@ const Navbar = ({setShowLogin}) => {
 
   <ul className="navbar-menu"> 
   <Link     to="/"           onClick={() => setMenu("home")}           className={menu === "home" ? "active" : ""}        >          Inicio        </Link>
-   <Link    to="/contact"    onClick={() => setMenu("contact")}        className={menu === "contact" ? "active" : ""}     >          Contacto      </Link>
    <Link     to="/agente"           onClick={() => setMenu("agente")}           className={menu === "agente" ? "active" : ""}  >     Agente            </Link>
    <Link    to="/proyectos"    onClick={() => setMenu("proyecto")}        className={menu === "proyecto" ? "active" : ""}     >       Proyecto      </Link>
+   <Link    to="/contact"    onClick={() => setMenu("contact")}        className={menu === "contact" ? "active" : ""}     >          Contacto      </Link>
 
 
   </ul>

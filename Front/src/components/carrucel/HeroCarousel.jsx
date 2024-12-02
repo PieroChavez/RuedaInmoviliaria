@@ -16,7 +16,7 @@ import nueve from '../../assets/rueda/nueve.jpg';
 // import butterfly2 from '../../assets/port/butterfly2.jpg';
 
 //import diesciseis from '../../assets/rueda/diesciseis.jpg';
-import DJI_0437 from '../../assets/marañon/DJI_0437.jpg';
+import DJI_0437 from '../../assets/marañon/DSC00626.jpg';
 //import DSC00928 from '../../assets/marañon/DSC00928.jpg'
 //import DJI_0551 from '../../assets/marañon/DJI_0551.jpg'
 //import DSC00314 from '../../assets/marañon/DSC00314.jpg'
@@ -84,11 +84,11 @@ const HeroCarousel = () => {
 
   const items = [
    
-    { name: 'EAGLE', image: nueve },
-    { name: 'OWL', image: veintiseis },
-    { name: 'CROW', image:  DJI_0491_HDR },
-      { name: 'OWL', image: DJI_0437 },
-      
+    { name: 'Tarapoto', image: nueve },
+    { name: 'Al Equipo ', image: veintiseis },
+    { name: 'Marañon', image:  DJI_0491_HDR },
+    { name: 'Jaen', image: DJI_0437 },
+
     // { name: 'BUTTERFLY', image: DSC00928 },
   
     // { name: 'EAGLE', image: DJI_0551 },

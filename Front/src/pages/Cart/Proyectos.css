@@ -1,107 +1,180 @@
-.cart{
-    margin-top: 100px;
-}
+/* General Reset */
 
-.cart-items-title{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
-    align-items: center;
-    color: grey;
-    font-size: max(1vw,12px);
-}
-
-.cart-items-item{
-    margin: 10px 0px;
-    color: black;
-}
-
-.cart-items-item img{
-    width: 50px;
-}
-
-.cart hr{
-    height: 1px;
-    background-attachment: #e2e2e2;
-    border: none;
-}
-
-.cart-items-item .cross{
-    cursor: pointer;
-}
-
-.cart-bottom{
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    gap: max(12vw, 20);
-}
-
-.cart-total{
-    flex: 1;
+/* Contenedor Principal */
+.proyectos-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-}
-
-.cart-total-details{
-    display: flex;
-    justify-content: space-between;
-    color: #555;
-}
-
-.cart-total hr{
-    margin: 10px 0px;
-}
-
-.cart-total button{
-    border: none;
-    color: white;
-    background-color: tomato;
-    width: max(15vw), 200px;
-    padding: 12px 0px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.cart-promocode{
-    flex: 1;
-
-}
-
-.cart-promocode{
-    color: #555;
-}
-
-.cart-promocode-input{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #eaeaea;
-    border-radius: 4px;
+    gap: 50px; /* Espaciado entre header y lista */
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+
+
+.proyectos-header {   
+    margin-top: 40px;
+    text-align: center; 
+    margin-top: 100px; /* Espacio general para el encabezado */
+  }
+  
+  .proyectos-header .titulo-ajustado {
+    margin-top: 40px; /* Espacio adicional para bajar el título */
+    font-size: 2.5rem;
+    color: #004d40; /* Verde oscuro */
+    text-align: center;    
+  }
+  
+
+.proyectos-header p {
+    
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
 }
 
-.cart-promocode-input input{
-    background: transparent;
-    border: none;
-    outline: none;
-    padding-left: 10px;
+/* Lista de Proyectos */
+.proyectos-list {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.cart-promocode-input button{
-    width: max(10vw, 150px);
-    padding: 12px 5px;
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+/* Tarjeta de Proyecto */
+.proyecto-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (max-width:750px){
-    .cart-bottom{
-        flex-direction: column-reverse;
-    }
-    .cart-promocode{
-        justify-content: start;
-    }
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.proyecto-details {
+  padding: 15px;
+}
+
+.proyecto-details h3 {
+  font-size: 1.5rem;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+.proyecto-details p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.btn-detalle {
+  background-color: #004d40;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-detalle:hover {
+  background-color: #00796b;
+}
+
+/* Footer */
+.proyectos-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #004d40;
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.proyectos-footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.proyectos-footer p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-contacto {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #e64a19;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .proyectos-header h1 {
+    font-size: 2rem;
+  }
+
+  .proyectos-header p {
+    font-size: 1rem;
+  }
+
+  .proyecto-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .proyecto-details p {
+    font-size: 0.9rem;
+  }
+
+  .btn-detalle, .btn-contacto {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .proyectos-footer h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .proyectos-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .proyectos-header p {
+    font-size: 0.9rem;
+  }
+
+  .proyectos-footer h2 {
+    font-size: 1.2rem;
+  }
+
+  .btn-detalle, .btn-contacto {
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
 }
