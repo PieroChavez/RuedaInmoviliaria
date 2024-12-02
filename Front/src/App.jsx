@@ -5,13 +5,13 @@ import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
-import Cart from "./pages/Cart/Cart";
 import Footer from "./components/Footer/Footer";
 import LoginPopup from "./components/LoginPopup/LoginPopup";
 
 
-import Hero from "./components/Hero/Hero";
-import HeroCarousel from "./components/carrucel/HeroCarousel";
+import ContactPage from "./pages/Contacto/ContactoPage";
+import Agente from "./pages/Agente/Agente";
+import Proyectos from "./pages/Cart/Proyectos";
 
 
 const App = () => {
@@ -21,11 +21,11 @@ const App = () => {
 
   return (
     <>
-             {/*   {showLogin? <LoginPopup setShowLogin= {setShowLogin}/>:<></>}
-    <Navbar setShowLogin= {setShowLogin}/>  */}
+               {showLogin? <LoginPopup setShowLogin= {setShowLogin}/>:<></>}
+    <Navbar setShowLogin= {setShowLogin}/>  
 
  
-    
+              
               
      
       <div className="app">   
@@ -33,11 +33,11 @@ const App = () => {
         
           <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/cart" element={<Cart />} />
 
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
+           <Route path="/agente" element={<Agente/>} />
+
+          <Route path="/contact" element={<ContactPage/>} />
+          <Route path="/proyectos" element={<Proyectos/>} />
         </Routes>
       </div>
       

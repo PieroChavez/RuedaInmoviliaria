@@ -8,21 +8,9 @@ const ContactPage = () => {
       <h1>Contacto</h1>
 
       <div className="dashboard">
-        <div className="mission">
-          <h2>Misión</h2>
-          <p>
-            Nuestra misión es ofrecer el mejor servicio inmobiliario, ayudando a nuestros clientes a encontrar
-            propiedades ideales que se ajusten a sus necesidades y expectativas, con profesionalismo y ética.
-          </p>
-        </div>
 
-        <div className="vision">
-          <h2>Visión</h2>
-          <p>
-            Ser la inmobiliaria líder en el mercado, reconocida por nuestra transparencia, compromiso y satisfacción
-            del cliente, contribuyendo al crecimiento del sector inmobiliario de la región.
-          </p>
-        </div>
+
+
 
         <div className="contact-form">
           <h2>Contáctanos</h2>
@@ -39,7 +27,7 @@ const ContactPage = () => {
               <label>Mensaje</label>
               <textarea placeholder="Escribe tu mensaje"></textarea>
             </div>
-            <button type="submit">Enviar</button>
+            <button className='contacto-contacto' type="submit">Enviar</button>
           </form>
         </div>
       </div>

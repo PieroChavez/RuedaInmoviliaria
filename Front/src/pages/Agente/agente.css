@@ -1,0 +1,146 @@
+.agente-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+   
+  }
+  
+  .agente-header {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+    
+  }
+  
+  .agente-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .agente-header p {
+    font-size: 1.2rem;
+  }
+  
+  .agente-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    
+  }
+  
+  .agente-image img {
+    width: 320px;
+    height: auto;
+    border-radius: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .agente-details {
+    max-width: 600px;
+  }
+  
+  .agente-details h2 {
+    font-size: 2rem;
+ 
+  }
+  
+  .agente-title {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .agente-description {
+    margin-bottom: 20px;
+  }
+  
+  .agente-highlights {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .agente-highlights li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact-btn {
+   
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .agente-testimonials {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .agente-testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial span {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .agente-footer {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+  }
+  
+  .agente-footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-btn {
+    background-color: white;
+    color: #28a745;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .cta-btn:hover {
+    background-color: #218838;
+    color: white;
+  }

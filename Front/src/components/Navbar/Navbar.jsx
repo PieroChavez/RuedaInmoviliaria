@@ -7,18 +7,18 @@ import { StoreContext } from '../../context/StoreContext'
             
 
 const Navbar = ({setShowLogin}) => {
-
-    const [menu,setMenu]= useState('menu');
-    
+    const [menu,setMenu]= useState('menu');    
     const {getTotalCartAmount}=useContext(StoreContext);
 
 
   return (
 <div className='navbar'>
 
-  <ul className="navbar-menu">
-  <a href='#home' onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Inicio</a>
-  <a href='/contact' className={menu === "contac-us" ? "active" : ""}>Contacto</a>
+  <ul className="navbar-menu"> 
+  <Link     to="/"           onClick={() => setMenu("home")}           className={menu === "home" ? "active" : ""}        >          Inicio        </Link>
+   <Link    to="/contact"    onClick={() => setMenu("contact")}        className={menu === "contact" ? "active" : ""}     >          Contacto      </Link>
+   <Link     to="/agente"           onClick={() => setMenu("agente")}           className={menu === "agente" ? "active" : ""}  >     Agente            </Link>
+   <Link    to="/proyectos"    onClick={() => setMenu("proyecto")}        className={menu === "proyecto" ? "active" : ""}     >       Proyecto      </Link>
 
 
   </ul>
@@ -30,9 +30,9 @@ const Navbar = ({setShowLogin}) => {
   
   <div className="navbar-right">
    
-    <button onClick={() => setShowLogin(true)}>
+    {/* <button onClick={() => setShowLogin(true)}>
       <p className='iniciar'>Información</p>
-    </button>
+    </button> */}
   </div>
 </div>
   )
