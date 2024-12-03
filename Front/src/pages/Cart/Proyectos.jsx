@@ -1,5 +1,7 @@
 import React from 'react';
 import './proyectos.css';
+import InfoCard from '../../components/InfoCars/InfoCars'
+
 
 const Proyectos = () => {
   const terrenos = [
@@ -66,7 +68,10 @@ const Proyectos = () => {
         <p>Contáctanos para más información y agenda una visita guiada.</p>
         <button className="btn-contacto">Contáctanos Ahora</button>
       </footer>
+      <InfoCard/>
+      
     </div>
+    
   );
 };
 

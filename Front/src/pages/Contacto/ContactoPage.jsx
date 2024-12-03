@@ -2,12 +2,14 @@
 import React from 'react';
 import './ContactoPage.css';
 
+
 const ContactPage = () => {
   return (
     <div className="contact-page">
       <h1>Contacto</h1>
+     
 
-      <div className="dashboard">
+      
 
 
 
@@ -30,7 +32,7 @@ const ContactPage = () => {
             <button className='contacto-contacto' type="submit">Enviar</button>
           </form>
         </div>
-      </div>
+      
     </div>
   );
 };

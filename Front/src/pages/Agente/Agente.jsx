@@ -29,7 +29,7 @@ const Agente = () => {
       <div className="agente-profile">
         <div className="agente-image">
           <img 
-            src="https://via.placeholder.com/300" // Reemplaza con la URL de la imagen del agente
+            src={arnulfo} // Reemplaza con la URL de la imagen del agente
             alt="Agente Inmobiliario"
           />
         </div>
